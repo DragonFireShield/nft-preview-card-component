@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="flex col">
+
+  <main class="main">
+    <article class="card flex col">
+      <div class="image-container">
+        <div class="image-overlay"></div>
+        <div class="image-overlay-icon"><img src="icon-view.svg"></div>
+        <img class="image" src="image-equilibrium.jpg">
+      </div>
+      <h1 class="title">Equilibrium #3429</h1>
+      <p class="description">Our Equilibrium collection promotes balance and calm.</p>
+      <div class="data flex">
+        <p class="price flex"><img class="icon-ethereum" src="icon-ethereum.svg">0.041 ETH</p>
+        <p class="time-left flex"><img class="icon-clock" src="icon-clock.svg">3 days left</p>
+      </div>
+      <hr class="line">
+      <div class="creator flex"><img class="creator-image" src="image-avatar.png">Creation of <a href="" class="creator-link">Jules Wyvern</a></div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/DragonFireShield">DragonFireShield</a>.
+    </div>
+  </footer>
+</body>
+</html>

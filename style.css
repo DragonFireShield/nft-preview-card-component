@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+/* Primary */
+
+--soft-blue: hsl(215, 51%, 70%);
+--cyan: hsl(178, 100%, 50%);
+
+/* Neutral */
+
+--very-dark-blue-main: hsl(217, 54%, 11%);
+--very-dark-blue-card: hsl(216, 50%, 16%);
+--very-dark-blue-line: hsl(215, 32%, 27%);
+--white: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    background-color: var(--very-dark-blue-main);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+}
+
+.flex {
+    display: flex;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.card {
+    width: 375px;
+    padding: 1.5em;
+    gap: 1em;
+    background-color: var(--very-dark-blue-card);
+    color: var(--soft-blue);
+    border-radius: 1em;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container:active .image-overlay {
+    opacity: .5;
+}
+
+.image-container:active .image-overlay-icon {
+    opacity: 1;
+}
+
+.image {
+    width: 100%;
+    display: block;
+    border-radius: .8em;
+    cursor: pointer;
+}
+
+.image-overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: .8em;
+    background-color: var(--cyan);
+    cursor: pointer;
+}
+
+.image-overlay-icon {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    color: var(--white);
+    cursor: pointer;
+}
+
+.title:active {
+    color: var(--cyan);
+}
+
+.description {
+    font-size: 18px;
+}
+
+.data {
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.price {
+    align-items: center;
+    gap: .5em;
+    color: var(--cyan);
+}
+
+.time-left {
+    align-items: center;
+    gap: .4em;
+}
+
+.line {
+    background-color: var(--very-dark-blue-line);
+}
+
+.creator {
+    align-items: center;
+    gap: .5em;
+}
+
+.creator-image {
+    width: 2em;
+    height: 2em;
+    margin-right: .5em;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+.creator-link {
+    color: var(--white);
+    cursor: pointer;
+}
+
+.creator-link:active {
+    color: var(--cyan);
+}
+
+.footer {
+    color: var(--white);
+}
